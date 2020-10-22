@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class Peakval {
-
+//Question 1
     public static int[] peaks(int[] arr) {
         int[] peakval = new int[arr.length];
 
@@ -21,8 +21,8 @@ public class Peakval {
         }
         return peakval;
     }
-
-    public static char[] arrange(char[] build) {
+//Question 2
+    public static char[] dep(char[] build) {
         ArrayList<String> order = new ArrayList<>();
         for (int i = 0; i < build.length; i++) {
             switch (build[i]) {
@@ -129,8 +129,8 @@ public class Peakval {
         System.out.println("\n");
         //BUILD ORDER
         char[] projects = {'a', 'b', 'c', 'd', 'e', 'f'};
-        char[][] dep = {{'a', 'd'}, {'f', 'b'}, {'b', 'd'}, {'f', 'a'}, {'d', 'c'}};
-        char[] ordered = arrange(projects);
+        //char[][] dep = {{'a', 'd'}, {'f', 'b'}, {'b', 'd'}, {'f', 'a'}, {'d', 'c'}};
+       dep(projects);
     }
 
 }
